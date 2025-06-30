@@ -1,16 +1,32 @@
-# fruits_app
+# 🍓 Fruits App
 
-A new Flutter project.
+A simple Flutter mobile application that displays a list of fruits with their details using a local JSON file.
 
-## Getting Started
+## 📱 Features
 
-This project is a starting point for a Flutter application.
+- View a scrollable list of fruits.
+- See details like:
+  - Fruit name
+  - Description
+  - Image
+- Data is loaded from a local JSON file for fast access and offline usage.
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Technologies Used
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Flutter](https://flutter.dev/)
+- Dart
+- Local JSON parsing
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📁 Project Structure
+
+```bash
+lib/
+├── main.dart          # Entry point
+├── models/
+│   └── fruit_model.dart  # Data model for Fruit
+├── pages/
+│   └── home_page.dart    # UI for displaying fruit list
+├── widgets/
+│   └── fruit_card.dart   # Reusable widget to display each fruit
+assets/
+└── fruits.json        # Local JSON file with fruits data
